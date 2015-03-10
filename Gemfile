@@ -36,10 +36,16 @@ gem 'airbrake'
 gem 'annotate'
 # Print object nicely
 gem 'awesome_print', :require => 'ap'
-# Debug tools
-gem 'better_errors'
-gem 'binding_of_caller' # together with better_errors enables instance variable inspection
 
+group :development do
+	# Debug tools
+	gem 'better_errors'
+	gem 'binding_of_caller' # together with better_errors enables instance variable inspection
+end
+
+group :test do
+	gem 'codeclimate-test-reporter', require: nil
+end
 
 group :development, :test do
   # Test suite

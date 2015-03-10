@@ -19,6 +19,7 @@
 
 # Development generated files
 tmp
+coverage
 public/system
 public/assets
 vendor/cache
