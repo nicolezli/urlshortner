@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310002757) do
+ActiveRecord::Schema.define(version: 20150311062748) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "url_maps", force: true do |t|
-    t.string   "origin_url", null: false
-    t.string   "token",      null: false
+    t.string   "origin_url", limit: 2083, null: false
+    t.string   "token",                   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

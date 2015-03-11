@@ -3,7 +3,7 @@
 # Table name: url_maps
 #
 #  id         :integer          not null, primary key
-#  origin_url :string(255)      not null
+#  origin_url :string(2083)     not null
 #  token      :string(255)      not null
 #  created_at :datetime
 #  updated_at :datetime
