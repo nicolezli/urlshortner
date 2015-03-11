@@ -38,8 +38,6 @@ app.controller('HomeCtrl', ['$scope', '$http',
 
                 // handle null case
                 $scope.url_map.origin_url = $scope.url_map.origin_url || "";
-                // convert to lower case
-                $scope.url_map.origin_url = $scope.url_map.origin_url.toLowerCase();
                 // if submitted, do not submit again
                 var found = _.find($scope.url_history, function(u) {
                     return u.origin_url == $scope.url_map.origin_url
